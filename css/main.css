@@ -378,8 +378,12 @@ body {
 
 /* contacts */
 
-.height-60 {
-    min-height: 60vh;
+#contacts {
+    margin-bottom: 5vh;
+}
+
+#contacts .card {
+    height: 20vh;
 }
 
 .contacts {
@@ -430,6 +434,14 @@ td {
 /* unused color */
 /* #d6d2a3 */
 
+@media screen and (max-width: 360px) {
+    
+    .contacts .card {
+        min-height: 42vh;
+    }
+}
+
+
 @media screen and (max-width: 414px) {
     .navbar-title {
         font-size: 3.9759vh;
@@ -438,4 +450,20 @@ td {
     .header-link {
         left: 44.5%;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    #about {
+        text-align: center;
+    }
+
+    #contacts {
+        margin-bottom: 5vh;
+    }
+
+    #contacts .card {
+        height: 27vh;
+    }
+
 }
